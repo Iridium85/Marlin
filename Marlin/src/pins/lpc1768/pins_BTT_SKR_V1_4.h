@@ -32,6 +32,8 @@
   #define SDCARD_CONNECTION                  LCD
 #endif
 
+#define SPINDLE_LASER_ENA_PIN P0_10  // digital pin
+#define SPINDLE_LASER_PWM_PIN P1_24   // digital pin - MUST BE HARDWARE PWM	
 //
 // Servos
 //
@@ -88,7 +90,7 @@
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN                  P0_10
+  #define Z_MIN_PROBE_PIN                  -1 // Was P0_10
 #endif
 
 //
@@ -319,7 +321,7 @@
 // Neopixel LED
 //
 #ifndef NEOPIXEL_PIN
-  #define NEOPIXEL_PIN                     P1_24
+  #define NEOPIXEL_PIN                     -1 // Was P1_24
 #endif
 
 /**
