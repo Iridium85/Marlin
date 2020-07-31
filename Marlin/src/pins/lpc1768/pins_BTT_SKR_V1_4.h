@@ -33,11 +33,11 @@
 #endif
 
 #define SPINDLE_LASER_ENA_PIN P0_10  // digital pin
-#define SPINDLE_LASER_PWM_PIN P1_24   // digital pin - MUST BE HARDWARE PWM	
+#define SPINDLE_LASER_PWM_PIN P2_00   // digital pin - MUST BE HARDWARE PWM	
 //
 // Servos
 //
-#define SERVO0_PIN                         P2_00
+#define SERVO0_PIN                         P1_24
 
 //
 // TMC StallGuard DIAG pins
