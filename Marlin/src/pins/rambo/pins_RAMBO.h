@@ -16,7 +16,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  */
 #pragma once
@@ -34,14 +34,14 @@
  *
  * Instructions for installing the Arduino RAMBo board type for the
  * Arduino IDE are available at:
- * http://reprap.org/wiki/Rambo_firmware
+ * https://reprap.org/wiki/Rambo_firmware
  */
 
 /**
  * Rambo pin assignments
  */
 
-#ifndef __AVR_ATmega2560__
+#if NOT_TARGET(__AVR_ATmega2560__)
   #error "Oops! Select 'Arduino/Genuino Mega or Mega 2560' in 'Tools > Board.'"
 #endif
 
